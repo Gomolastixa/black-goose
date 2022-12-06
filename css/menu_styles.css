@@ -1,0 +1,54 @@
+body
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.75em;
+}
+h1
+{
+    text-align: center;
+    color: olive;
+    text-shadow: .05em .05em .1em gray;
+    font-family: Georgia, serif;
+}
+h3
+{
+    text-align: center;
+    color: olive;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+dt
+{
+    color: sienna;
+    font-weight: bolder;
+    padding:  0.4em;
+}
+sup,small
+{
+    color: red;
+}
+.info
+{
+    text-align: center;
+    color: gray;
+    font-style: italic;
+}
+.label
+{   
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.desrc
+{
+    text-align: center;
+    font-style: italic;
+}
+.new
+{
+    color: rgb(235, 102, 54);
+}
+.price
+{
+    color: gray;
+    font-style: italic;
+}
