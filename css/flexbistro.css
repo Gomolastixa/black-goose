@@ -1,0 +1,49 @@
+body
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5em;
+}
+h1
+{
+    font-size: 4em;
+    font-weight: normal;
+    line-height: normal;
+}
+.flex_container
+{
+    display: flex;
+    flex-direction: row; /* flex-flow: row wrap: */
+    flex-wrap: wrap;     /* ---^                  */   
+    justify-content: center;
+    align-items: stretch;
+    border: 3px solid brown;
+    padding: 0.4em;
+}
+.flex_content
+{
+    background-color: beige;
+    border: 1px dotted brown;
+    padding: 0.5em 1.2em;
+    margin: 0.2em 0.5em;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+#header
+{
+    color: orange;
+    background-color: brown;
+}
+.price
+{
+    font-weight: bold;
+    background-color: orange;
+    text-align: center;
+    padding: 0.3em;
+    margin-top:auto;
+}
+img
+{
+    margin-bottom: 3em;
+}
