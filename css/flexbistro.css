@@ -1,3 +1,4 @@
+
 body
 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -17,17 +18,17 @@ h1
     justify-content: center;
     align-items: stretch;
     border: 3px solid brown;
-    padding: 0.4em;
 }
 .flex_content
 {
     background-color: beige;
     border: 1px dotted brown;
-    padding: 0.5em 1.2em;
-    margin: 0.2em 0.5em;
-    width: 240px;
+    padding: 1.5em;
+    margin: 0.5em;
+    width: 160px;
     display: flex;
     flex-direction: column;
+    flex: auto;
 }
 
 #header
@@ -45,5 +46,6 @@ h1
 }
 img
 {
-    margin-bottom: 3em;
+    order: -1;
+    align-self: flex-start;
 }
