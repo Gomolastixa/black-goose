@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Breads of the World!</title>
+    <style>
+        body{
+            font-size: 1.1em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0 5em;
+            display: grid;
+            grid-template-areas:'header header header header header header header header header'
+                                'main main main main main main bread1 bread2 bread3'
+                                'main main main main main main . . . '
+                                'main main main main main main footer footer footer' ;
+            
+        }
+        header{
+            grid-area: header;
+        }
+        nav{
+            background-color: #783F27;
+            padding: 0.1em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            grid-area: nav;
+        }
+        main{
+            border: 3px double lightcoral;
+            border-radius: 1em;
+            padding: 1em;
+            line-height: 1.7em;
+            margin: 1em 1em;
+            grid-area: main;
+        }
+        footer{
+            color: blanchedalmond;
+            background-color: #783F27;
+            padding: 0.3em;
+            letter-spacing: 0.2em;
+            font-size: small;
+            text-align: center;
+            grid-area: footer;
+        }
+        ul{
+            list-style: none;
+            display: flex;         
+            align-items: stretch;
+            justify-content: center;
+        }
+        ul li{ 
+                color: orange;
+                border: 2px solid orange;
+                padding: 0.3em;
+                margin: auto 0.3em;
+                border-radius: 0.3em;
+        }
+        .images{
+            margin: 1em 1em;
+        
+        }
+        .uzbek{
+            grid-area: bread1;
+        }
+        .whole{
+            grid-area: bread2;
+        }
+        .braid{
+            grid-area: bread3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Menu</li>
+                <li>News</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Introducing: Breads of the World!</h2>
+        <p>
+            It seems as though every region of the world has its own special take on this staple of humankind. 
+            From crusty french baguettes to table-sized Afghan flat-breads, breads can come in all shapes, sizes, and textures.
+        </p>
+        <p>
+            Each month, we feature a bread that is the specialty of a particular culture or part of the world. 
+            Some will be made in-house by our bakers who travel around the world learning regional techniques in order to bring them back for you to try. 
+            Other breads will be provided by local bakeries that have been making bread for their communities for generations.
+        </p>
+        <p>
+            When you are in the bakery, we encourage you to give our featured Bread of the World a try. 
+            If you can't make it to the shop, many of our breads will be available for purchase online.
+        </p>
+        <p>
+            Providing you with fresh, unique breads is one of the things that makes Black Goose Bakery proud.
+        </p>
+    </main>
+    <figure class="images uzbek"><img src="images/uzbek_150.jpg" alt="uzbeki bread"></figure>
+    <figure class="images whole"><img src="images/bread_150.jpg" alt="wholemeal bread"></figure>
+    <figure class="images braid"><img src="images/braided_150.jpg" alt="braided bread"></figure>
+    <footer>
+        <p><b>Black Goose Bakery</b> | Seekonk, MA
+            Monday - Friday: 5am to 3pm | Saturday & Sunday: 6am to 4pm</p>
+    </footer>
+</body>
+</html>
