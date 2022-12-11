@@ -56,13 +56,14 @@
             border-color: white;
         }
         figure {
-            margin: auto;
+            margin: 0;
         }
         #grid_layout {
             display: grid;
-            grid-template-columns: repeat(8,9em);
-            grid-auto-rows: minmax(auto,auto) ; /* to fraction χαλαει στο resize */
+            grid-template-columns: repeat(8,minmax(auto,9em));
+            grid-template-rows: repeat(5,minmax(auto-fit,1fr)) ;
             grid-gap: 1em;
+         
         }
 
         .uzbek {
