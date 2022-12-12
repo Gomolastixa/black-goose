@@ -1,43 +1,53 @@
-* {
-    box-sizing:border-box;
+html {
+    box-sizing: border-box;
 }
-body
-{
+ * {
+    box-sizing:inherit;
+}
+
+body {
     margin: 0 0 0 0;
 }
-header
-{
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6,auto-fit) 2em;
+    grid-auto-rows: minmax(auto-fit,1fr) ;
+}
+
+header {
     text-align: center;
     background-image: url(/images/croissants_banner.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     color: white;
-    padding-bottom: 1em;
-    
+    padding-bottom: 1em; 
+    grid-column: span 7;  
 }
-header p
-{
+
+header p {
     font-style: italic;
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 0.5em;
 }
-nav
-{
-    background-color: rgb(134, 54, 2);
+
+nav {
+    background-color: rgba(134, 55, 2, 0.8);
     font-size: 90%;   
 }
-#logo
-{
+
+#logo {
     padding-top: 1em;
 }
-#award
-{   
+
+#award {   
     position: absolute;
-    top: 5%;
+    top: 4%;
     left: 5%;
 } 
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -46,39 +56,41 @@ nav ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-  nav ul li {
+}
+
+nav ul li {
     font-size: .8em;
     text-transform: uppercase;
     letter-spacing: .2em;
-  }
-  nav ul li a { 	
+}
+
+nav ul li a { 	
     display: block;	
     border: 1px solid; 	
     border-radius: .5em; 	
     padding: .5em 1em; 	
     margin: .5em; 
     text-decoration: none;
-  } 
-a
-{
+} 
+
+a {
     color: orange;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     font-size: small;
     text-decoration-style: dotted;
 }
-a:hover
-{
+
+a:hover {
     color: white;
 }
-h2
-{
+
+h2 {
     color: darkslategray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-main h3
-{
+
+main h3 {
     color: brown;
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -86,62 +98,64 @@ main h3
     border-left: 0.15em solid;
     padding-left: 0.5em;
 }
-main
-{
+
+main {
     padding: 1em;
     border: 0.3em double rgb(251, 187, 161);
     border-radius: 1.5em;
-    margin: 2.5em;
+    margin: 0.5em;
+    grid-column: span 5;
 }
-main img
-{
+
+main img {
    float: left;
    margin: 0 1em 1em 0;
    shape-outside: ellipse();
 }
-main p
-{   color: gray;
+
+main p {   color: gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-main a
-{
+
+main a {
     font-size: small;
     letter-spacing: normal;
 }
-main a:hover
-{
+
+main a:hover {
     color: orangered;
 }
-.more
-{
+
+.more {
     clear: left;
 }
-aside
-{
+
+aside {
     background: beige url(/images/scallop.png) left repeat-y;
     font-size: medium;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 1em;
     padding-left: 3em;
-    margin: 2.5em 2.5em 0em 8em;
-    border-radius: 1.5em;
+    grid-column: 6/ 7;
+    
 }
-aside h3
-{
+
+aside h3 {
     text-transform: capitalize;
     color: black;
     letter-spacing: 0.1em;
 }
-.day
-{
+
+.day {
     text-transform: uppercase;
     color: rgba(134, 55, 2, 0.667);
 }
-footer
-{
+
+footer {
     text-align: center;
     font-size: 90%;
     color: white;
     background-color: rgb(157, 82, 29);
-    padding: 0.7em;   
+    padding: 0.7em; 
+    grid-column: span 7;  
 }
